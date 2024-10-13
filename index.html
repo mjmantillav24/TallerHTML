@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peliculas más taquilleras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mejores Peliculas de los últimos años</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#avatarModal">Avatar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#avengersModal">Avengers: Endgame</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#avatar2Modal">Avatar: The way of Water</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#titanicModal">Titanic</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#starWarsModal">Star Wars: The Force Awakens</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!-- Contenedor Principal -->
+    <div class="container">
+        <div class="row">
+        
+        <!-- Sección de Imagen y Información -->
+            <div class="col-md-8">
+                <!-- Imagen Destacada -->
+                <div class="mb-4" style="text-align: center;">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/43/3d/83/433d83f7e481f35245f8c6bb7c7591d8.gif" class="img-fluid rounded custom-img" alt="Películas">
+                </div>
+                <!-- Información con Párrafos y Enlace -->
+                <div class="info-text">
+                    <p>Bienvenidos a nuestra exclusiva colección de las películas más taquilleras de todos los tiempos. En este espacio, exploraremos cinco grandes obras cinematográficas que han dejado una marca significativa en la historia del cine, la industria y la cultura popular, cada película ofrece una experiencia única que ha resonado con millones de espectadores en todo el mundo. Si deseas conocer más sobre el cine contemporáneo, visita <a href="https://www.imdb.com" target="_blank">IMDb</a> para obtener información detallada sobre películas, actores, directores, sus recaudaciones, críticas y mucho más.</p>
+                    <p>Además, podrás suscribirte para recibir las últimas novedades y actualizaciones directamente en tu correo electrónico.</p>
+                </div>
+            </div>
+
+
+            <!-- Barra Lateral -->
+            <div class="col-md-4">
+                <!-- Lista de Películas -->
+                <div class="mb-4">
+                <h3>Mejores peliculas</h3>
+                <ul class="lista-peliculas">
+                    <li>
+                        <a href="#avatarModal" data-bs-toggle = "modal">Avatar (2009)</a> - <a href="https://es.wikipedia.org/wiki/Avatar_(pel%C3%ADcula)">Más Información</a>
+
+                    </li>
+                    <li>
+                        <a href="#avengersModal" data-bs-toggle="modal">Avengers: Endgame (2019)</a> - <a href="https://es.wikipedia.org/wiki/Avengers:_Endgame">Más información</a>
+                    </li>
+                    <li>
+                        <a href="#avatar2Modal" data-bs-toggle="modal">Avatar: The Way of Water (2022)</a> - <a href="https://es.wikipedia.org/wiki/Avatar:_The_Way_of_Water">Más información</a>
+                    </li>
+                    <li>
+                        <a href="#titanicModal" data-bs-toggle="modal">Titanic (1997)</a> - <a href="https://es.wikipedia.org/wiki/Titanic_(pel%C3%ADcula_de_1997)">Más información</a>
+                    </li>
+                    <li>
+                        <a href="#starWarsModal" data-bs-toggle="modal">Star Wars: The Force Awakens (2015)</a> - <a href="https://en.wikipedia.org/wiki/Star_Wars:_The_Force_Awakens">Más información</a>
+                    </li>
+                </ul>
+                </div>
+                <!-- Formulario de Suscripción -->
+                <div>
+                    <h3>Suscríbete</h3>
+                    <form class="form-suscripcion">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales -->
+    <div class="modal fade" id="avatarModal" tabindex="-1" aria-labelledby="avatarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="avatarModalLabel">Avatar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <!-- Imagen de la película -->
+                    <img src="https://pics.filmaffinity.com/avatar-208925608-large.jpg" alt="Avatar" class="img-fluid mb-3", style="width: 200px; height: auto;">
+                    <div class="ms-3">
+                    <!-- Descripción de la película -->
+                    Dirigida por James Cameron, Avatar se convirtió en un hito del cine al alcanzar más de 2.92 mil millones de dólares en taquilla, convirtiéndose en la película más taquillera de todos los tiempos. La historia nos transporta al exuberante mundo de Pandora, donde la interacción entre humanos y la especie nativa, los Na'vi, plantea profundas reflexiones sobre el medio ambiente y la explotación cultural. Los innovadores efectos visuales y el uso del 3D marcaron un antes y un después en la industria cinematográfica.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="avengersModal" tabindex="-1" aria-labelledby="avengersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="avengersModalLabel">Avengers: EndGame</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <!-- Imagen de la película -->
+                    <img src="https://preview.redd.it/1sdabp4nt2m21.jpg?auto=webp&s=1d3793ac4d16c6dfc457da2dc65cff869221cc80" alt="Avengers: EndGame" class="img-fluid mb-3" style="width: 200px; height: auto;">
+                    <!-- Descripción de la película -->
+                    <div class="ms-3">
+                    Esta entrega, dirigida por Anthony y Joe Russo, es la culminación de una década de historias en el Universo Cinematográfico de Marvel. Con ingresos de aproximadamente 2.79 mil millones de dólares, Endgame se posicionó brevemente como la película más taquillera antes de ser superada por Avatar tras su relanzamiento. La película ofrece un emocionante cierre a las tramas de personajes icónicos como Iron Man y Capitán América, convirtiéndose en un evento cultural significativo en la historia del cine.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="avatar2Modal" tabindex="-1" aria-labelledby="avatar2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="avatar2ModalLabel">Avatar: The Way of Water</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <!-- Imagen de la película -->
+                    <img src="https://th.bing.com/th/id/OIP.kwmS5OdRk11HNnOpOYoLFQHaKl?rs=1&pid=ImgDetMain" alt="Avatar: The Way of Water" class="img-fluid mb-3"  style="width: 200px; height: auto;">
+                    <div class="ms-3">
+                    <!-- Descripción de la película -->
+                    También dirigida por James Cameron, esta secuela de Avatar ha logrado un éxito rotundo, recaudando más de 2.32 mil millones de dólares en todo el mundo. La película explora la vida de Jake y Neytiri, quienes deben proteger su familia y su hogar frente a nuevas amenazas. Con impresionantes avances en tecnología de efectos visuales y un enfoque en los ecosistemas acuáticos de Pandora, The Way of Water continúa la rica narrativa del primer filme, llevando a los espectadores a un viaje emocional y visualmente deslumbrante.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanicModal" tabindex="-1" aria-labelledby="titanicModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanicModalLabel">Titanic</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <!-- Imagen de la película -->
+                    <img src="https://media.paperblog.fr/i/513/5137025/titanic-L-4AGD4d.jpeg" alt="Titanic" class="img-fluid mb-3 " style="width: 200px; height: auto;">
+                    <!-- Descripción de la película -->
+                    <div class="ms-3">
+                    También dirigida por James Cameron, Titanic es un clásico que narra la trágica historia de amor entre Jack y Rose a bordo del infame barco. Con 11 premios Óscar y más de 2.25 mil millones de dólares recaudados, la película es un testimonio del talento de Cameron para combinar una narración emocional con innovadores efectos visuales. Su impacto perdura en la cultura popular, convirtiéndola en una de las películas más memorables de la historia.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="starWarsModal" tabindex="-1" aria-labelledby="starWarsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="starWarsModalLabel">Star Wars: The Force Awakens</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <!-- Imagen de la película -->
+                    <img src="https://cdn.traileraddict.com/content/walt-disney-pictures/star_wars7-5.jpg" alt="Star Wars: The Force Awakens" class="img-fluid mb-3"  style="width: 200px; height: auto;">
+                    <!-- Descripción de la película -->
+                    <div class="ms-3">
+                    Esta nueva entrega de la saga Star Wars, dirigida por J.J. Abrams, logró un impresionante total de 2.07 mil millones de dólares en taquilla. El Despertar de la Fuerza reinicia la narrativa de la saga, presentando nuevos personajes junto a los icónicos héroes y villanos de la serie. La película no solo revitalizó el interés en el universo Star Wars, sino que también estableció una nueva generación de seguidores y continuó la rica tradición de contar historias épicas en la ciencia ficción.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+
+
+    <script>
+        document.querySelector('.form-suscripcion').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('¡Gracias por suscribirte!');
+        // Aquí puedes agregar la lógica para enviar los datos del formulario
+        this.reset();
+        });
+    </script>
+</body>
+</html>
+
+

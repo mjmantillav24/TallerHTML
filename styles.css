@@ -1,0 +1,65 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    padding-top:0;
+    background-color: #f8f9fa;
+  }
+  
+
+  /* Encabezado */
+  .navbar-brand {
+    font-size: 1.8rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+    font-weight: bold; /* Hacer el texto más audaz */
+}
+  
+  /* Texto de información */
+  .info-text {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+  }
+
+  .custom-img {
+    width: 500px; /* Ajusta el tamaño aquí */
+    height: auto; /* Mantiene la proporción */
+   }
+  
+  .info-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .info-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Lista de películas favoritas */
+  .lista-peliculas {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Sin padding */
+    }
+
+    .lista-peliculas li {
+        margin-bottom: 0.5rem; /* Espaciado entre elementos de la lista */
+    }   
+
+    .lista-peliculas a {
+        color: #007bff; /* Color azul para los enlaces */
+        text-decoration: none; /* Elimina el subrayado */
+    }
+
+    .lista-peliculas a:hover {
+        text-decoration: underline; /* Subrayado al pasar el mouse */
+    }
+  
+  /* Formulario de suscripción */
+  .form-suscripcion {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+  
+  .form-suscripcion button {
+    width: 100%;
+  }
